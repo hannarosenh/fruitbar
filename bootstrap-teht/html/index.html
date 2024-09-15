@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/css/style.css">
+<link rel="icon" type="image" href="/img/favicon Large.jpeg">
+    <title>Fruit Bar</title>
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+    <main id="alku" class="container">
+        <h1 class="visually-hidden">Fruit Bar</h1>
+        <!--Navigaatio-->
+        <nav class="navbar navbar-expand-sm navbar-light navbar-custom fixed-top">
+            <div class="container-fluid" id="alku">
+                <a class="navbar-brand" href="#alku"><img src="/img/mango.png" alt="Logo" width="50">Fruit Bar</a>
+                <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#jobs">Jobs</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#menu" role="button" data-bs-toggle="dropdown">Menu</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#menu">Fruit plates</a></li>
+                                <li><a class="dropdown-item" href="#menu">Smoothies</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--Karuselli-->
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" 
+                    aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/img/christian-wiediger-um4ltfeEaec-unsplash Large.jpeg" class="d-block w-100" alt="Hedelmiä">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Delicious fruit plates</h2>
+                        <p>Choose one of our ready-made plates or create your own!</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/img/element5-digital-acrBf9BlfvE-unsplash Large.jpeg" class="d-block w-100" alt="Hedelmiä">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Yummy smoothies</h2>
+                        <p>All that goodness blended together!</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/img/hoach-le-dinh-c8TWWQ5ZnUw-unsplash Large.jpeg" class="d-block w-100" alt="Hedelmiä">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Fresh fruit every day</h2>
+                        <p>Only the best fruit ends up on your plate or smoothie!</p>
+                    </div>
+                </div>
+                    <div class="carousel-item">
+                        <img src="/img/luann-hunt-O3TlS547j7k-unsplash Large.jpeg" class="d-block w-100" alt="Hedelmiä">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2>Eat in or take away!</h2>
+                            <p>Whatever works for you, enjoy your fruity treat at the bar or take away!</p>
+                        </div>
+                    </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!--Grid-->
+        <div class="container" id="about">
+            <div class="row">
+                <div class="col-md-4"><img src="/img/debby-hudson-YJTLnwjLi4k-unsplash Large.jpeg" alt="Mango"></div>
+                <div class="col-md-4">
+                    <h2 class="visually-hidden">About us</h2>
+                    <p><strong>We are Fruit bar</strong>, a healthy fast food company passionate about improving your day with healthy, tasty and fruity snacks!</p>
+                    <p>You can pop by for a quick smoothie after gym or spend your afternoon savoring our tasty fruit plates!</p>
+                    <p>Whatever fruit you're into, we've got it. Whichever form you want it in, we've got you.</p>
+                </div>
+                <div class="col-md-4"><img src="/img/rebecca-hansen-hRmk-FMpofc-unsplash Large.jpeg" alt="Mango"></div>
+            </div>
+        </div>
+        <!--Kortit-->
+        <div class="container" id="jobs">
+            <h2>Jobs available!</h2>
+            <div class="cards">
+                <div class="card">
+                    <img class="card-img-top" src="/img/brenda-godinez-CrK843Pl9a4-unsplash 1 Large.jpeg" alt="">
+                    <div class="card-body">
+                        <h3>Smoothie master</h3>
+                        <p>Our delicious smoothies don't prepare themselves. Are you our next smoothie magician?</p>
+                        <a class="btn btn-primary" href="">Apply now</a>
+                    </div>
+                </div>
+                    <div class="card">
+                        <img class="card-img-top" src="/img/caju-gomes-QDq3YliZg48-unsplash 1 Large.jpeg" alt="">
+                        <div class="card-body">
+                            <h3>Fruit expert</h3>
+                            <p>Fruit is our passion here at Fruit Bar. Are you ready to take charge of our fruit orders?</p>
+                            <a class="btn btn-primary" href="">Apply now</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="/img/ben-wicks-LK4sk81TZh8-unsplash 1 Large.jpeg" alt="">
+                        <div class="card-body">
+                            <h3>Accountant</h3>
+                            <p>Fruit + fruit = Yum! But seriously, we need someone to look after our finances too. Could it be you?</p>
+                            <a class="btn btn-primary" href="">Apply now</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="/img/nathan-dumlao-kLmt1mpGJVg-unsplash 1 Large.jpeg" alt="">
+                        <div class="card-body">
+                            <h3>SoMe Manager</h3>
+                            <p>Let's get the word out! Want to work as a bridge between our fruit and potential customers?</p>
+                            <a class="btn btn-primary" href="">Apply now</a>
+                        </div>
+                    </div>
+            </div>
+            </div>
+        <!--Haitari-->  
+        <div id="menu">
+            <h2>Menu</h2>
+            <div class="card">
+                <div class="card-header">
+                    <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+                        Fruit plates
+                    </a>
+                </div>
+                <div id="collapseOne" class="collapse" data-bs-parent="#menu">
+                    <div class="card-body">
+                        <img src="/img/debby-hudson-YJTLnwjLi4k-unsplash Large.jpeg" alt="Fruit plate">
+                        <div>
+                            <p>Our delicious fruit plates are to die for! Choose one of our ready-made plates or create your own. Our selection of fruit consists of:</p>
+                            <ul>
+                                <li>banana</li>
+                                <li>apple</li>
+                                <li>pear</li>
+                                <li>watermelon</li>
+                                <li>mango</li>
+                                <li>papaya</li>
+                                <li>and many more, just ask at the counter!</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <a class="btn" data-bs-toggle="collapse" href="#collapseTwo">
+                        Smoothies
+                    </a>
+                </div>
+                <div id="collapseTwo" class="collapse" data-bs-parent="#menu">
+                    <div class="card-body">
+                            <img src="/img/kofi-buckley-1kJtAIHi3_w-unsplash Large.jpeg" alt="Smoothie">
+                            <div>
+                                <p>Our smoother than smooth smoothies serve as a perfect snack whenever you're in need of one! Choose one of our ready-made recipes or create your own. Our selection of smoothies include:</p>
+                                <ul>
+                                    <li>super duperfood</li>
+                                    <li>mango dream</li>
+                                    <li>green goodness</li>
+                                    <li>coffee kickstart</li>
+                                    <li>and many more, just ask at the counter!</li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <!--Taulukko-->
+        <div id="contact" class="table-responsive">
+            <h2>Get in touch!</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Title</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Sarah Smooth</td>
+                        <td>Founder</td>
+                        <td>sarah.smooth@fruitbar.com</td>
+                    </tr>
+                    <tr>
+                        <td>Felix Fruity</td>
+                        <td>Customer Care Assistant</td>
+                        <td>felix.fruity@fruitbar.com</td>
+                    </tr>
+                    <tr>
+                        <td>Mary Mango</td>
+                        <td>Partnership Manager</td>
+                        <td>mary.mango@fruitbar.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+</html>
