@@ -1,0 +1,157 @@
+:root {
+    --white-color: #F4EDE5;
+    --black-color: #121212;
+    --light-green-color: #6F9E90;
+    --dark-green-color: #1D5844;
+    --light-pink-color: #FCDBD6;
+    --dark-pink-color: #FEC2C2;
+    --brown-color: #C89F7E;
+
+}
+
+body {
+    background-color: var(--white-color);
+    font-family: "Roboto", sans-serif !important;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.navbar-brand {
+    font-family: "Titan One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.navbar-custom {
+    background-color: var(--light-pink-color);
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: var(--dark-green-color);
+}
+
+.navbar-custom .navbar-nav .nav-link {
+    color: var(--dark-green-color);
+}
+
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: var(--light-green-color);
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(29,88,68, 100)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); 
+}
+
+.nav-item .dropdown-menu a{
+    color: var(--dark-green-color) !important;
+    cursor: pointer;
+}
+
+.nav-item .dropdown-menu a:hover {
+    color: var(--dark-green-color) !important;
+    background-color: var(--light-pink-color);
+}
+
+.nav-link.active {
+    color: var(--light-green-color) !important;
+}
+
+body {
+    position: relative;
+}
+
+.carousel-caption {
+    color: var(--black-color);
+    background-color: var(--white-color);
+    border-radius: 20px;
+}
+
+.carousel-caption h2 {
+    font-family: "Titan One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#about, #jobs, #menu, #contact {
+    padding-top: 70px;
+}
+
+#contact {
+    padding-bottom: 70px;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col-md-4 img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 0 30% 0 30%;
+}
+
+.btn {
+    background-color: var(--light-green-color);
+    color: var(--black-color);
+    border: none;
+}
+
+.btn:hover {
+    background-color: var(--black-color);
+    color: var(--light-green-color);
+}
+
+.cards {
+    display: flex;
+}
+
+.card-body img {
+    width: 50%;
+    max-width: 500px;
+}
+
+.collapse .card-body img {
+    border-radius: 0 30% 0 30%;
+}
+
+#collapseOne .card-body,
+#collapseTwo .card-body {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+#menu .card{
+    background-color: var(--light-pink-color);
+    border: none;
+}
+
+#menu .card .card-header .btn {
+    background-color: var(--light-pink-color);
+    font-weight: 900;
+}
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+/*Media query korteille*/
+@media only screen and (max-width: 1025px) {
+    #collapseOne .card-body,
+    #collapseTwo .card-body {
+        flex-direction: column;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+}
